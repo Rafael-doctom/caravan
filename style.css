@@ -1,0 +1,24 @@
+body{
+    /* height: 1000px; */
+    padding-top: 75px;
+}
+/* HEADER */
+.navbar-box-shadow{
+    box-shadow:  0 0px 4px 0 rgb(61, 24, 24);
+}
+.input-group .btn{
+    padding: .675rem .75rem;
+
+}
+/* HOME-QUOTE */
+
+#home-quote{
+    background: url(img/bg-quote.jpg) center;
+    background-size: cover;
+}
+
+@media (max-width: 768px){
+    #home-quote .display-4{
+        font-size: 2rem;
+    }
+}
