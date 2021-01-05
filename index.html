@@ -13,7 +13,45 @@
 </head>
 
 <body>
+  <!-- MODAL -->
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " style="font-weight: 900;" id="modalLoginTitulo">Entre na sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email </label>
+              <input type="email" class="form-control" id="loginEmail" 
+                placeholder="Digite seu Email...">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha" placeholder="Digite sua senha...">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <p class="text-secondary pt-2">Esqueceu a sua senha?<a href=""> Clique aqui.</a>
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FECHAR MODAL -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 navbar-box-shadow">
     <a href="index.html" class="navbar-brand">
       <img src="img/caravan.svg" alt="Logo Caravan">
@@ -49,7 +87,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
         </li>
 
         <li class="nav-item ">
@@ -317,8 +355,8 @@
           </h4>
           <ul class="list-unstyled">
             <li>
-              <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;"  href="">Facebook</a>
-              <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;"  href="">Instagram</a>
+              <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;" href="">Facebook</a>
+              <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;" href="">Instagram</a>
               <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;" href="">Twitter</a>
             </li>
           </ul>
@@ -326,7 +364,7 @@
       </div>
     </div>
 
-    <div class="bg-primary text-center py-3">  
+    <div class="bg-primary text-center py-3">
       <p class="mb-0">
         Caravan © 2020. ALguns direitos reservados.
       </p>
