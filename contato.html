@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Caravan - Planos</title>
+    <title>Caravan!</title>
 </head>
 
 <body>
+    <!-- MODAL -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button> -->
 
     <!-- Modal -->
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
@@ -58,6 +63,7 @@
 
         <div id="navbarSupportedContent" class="collapse navbar-collapse collapse show">
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
@@ -70,7 +76,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <!-- <li class="nav-item active"> -->
                     <a class="nav-link" href="planos.html">Planos
                     </a>
@@ -93,85 +99,150 @@
 
 
 
-    <section class="container text-center">
-        <div class="my-5">
-            <span class="h6 d-block">SUA VIAGEM, SEU PLANO</span>
-            <h1 class="display-4 text-primary">
-                Escolha o Plano
-            </h1>
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">POSSUÍ ALGUMA DÚVIDA?</span>
+            <h2 class="display-4 text-primary">
+                Fale Conosco
+            </h2>
         </div>
+
         <div class="row">
-            <div class="col-md mb-5">
-                <div class=" bg-light rounded p-4 ">
-                    <h2>Gold</h2>
-                    <ul class="lista-plano list-unstyled">
-                        <li>30 Dias de Viagem</li>
-                        <li>3 Destinos diferentes</li>
-                        <li>Tudo pago pela Empresa</li>
-                        <li>Ingressos para Festas</li>
-                    </ul>
-                    <form action="">
-                        <div class="form-group">
-                            <select class="form-control" id="inputCidades">
-                                <option>Selecione a Cidade</option>
-                                <option>California</option>
-                                <option>Paris</option>
-                                <option>Dublin</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="row mt-4 align-items-center">
-                        <div class="col">
-                            <a href="inscricao.html" class=" btn btn-primary btn-lg btn-block">
-                                Comprar Plano
-                            </a>
-                        </div>
-                        <div class="col">
-                            <span class="h4">
-                                R$ 5.000
-
-                            </span>
-                        </div>
+            <div class="col-lg mb-5">
+                <form>
+                    <div class="form-group">
+                        <label for="clienteNome">Nome</label>
+                        <input type="text" class="form-control" id="clienteNome" aria-describedby="emailHelp">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="clientemEmail">Email</label>
+                        <input type="password" class="form-control" id="clientemEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="clienteMensagem">Mensagem</label>
+                        <textarea class="form-control" id="clienteMensagem" rows="4"></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
             </div>
-            <div class="col-md mb-5">
-                <div class="bg-light rounded p-4 "> 
-                    <h2>Platinum <span class="badge btn-success">Novo</span></h2>
-                    <ul class="lista-plano list-unstyled">
-                        <li>60 Dias de Viagem</li>
-                        <li>6  Destinos diferentes</li>
-                        <li>Tudo pago pela Empresa</li>
-                        <li>Ingressos para Festas</li>
-                    </ul>
-                    <form action="">
-                        <div class="form-group">
-                            <select class="form-control" id="inputCidades">
-                                <option>Selecione a Cidade</option>
-                                <option>California</option>
-                                <option>Paris</option>
-                                <option>Dublin</option>
-                            </select>
-                        </div>
-                    </form>
-                    <div class="row mt-4 align-items-center">
-                        <div class="col">
-                            <a href="inscricao.html" class=" btn btn-primary btn-lg btn-block">
-                                Comprar Plano
-                            </a>
-                        </div>
-                        <div class="col">
-                            <span class="h4">
-                                R$ 7.500
 
-                            </span>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-lg">
+                <h2 class="h6">NOSSO ENDEREÇO</h2>
+                <a href="#">
+                    <img class="img-fluid rounded mb-4" src="img/mapa.png" alt="Endereço da Empresa">
+                </a>
+                <h2 class="h6">
+                    DADOS DE CONTATO
+                </h2>
+                <ul class="list-unstyled text-secondary">
+                    <li>caravan@caravan.com</li>
+                    <li>(21)9999-999</li>
+                    <li>De Seg. à Sex. das 8h às 18h</li>
+                </ul>
+                <h2 class="h6">
+                    REDES SOCIAIS
+                </h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;"
+                            href="">Facebook</a>
+                        <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;"
+                            href="">Instagram</a>
+                        <a class="btn btn-outline-secondary btn-block mb-2" style="max-width: 140px;"
+                            href="">Twitter</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
+
+
+
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+            <h2 class="display-4 text-primary">
+                Perguntas Frequentes
+            </h2>
+        </div>
+
+        <div class='row justify-content-center'>
+            <div class="col-md-6" id="perguntas-frequentes" data-children=".pergunta">
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntas-frequentes" href="#pergunta1"
+                        aria-expanded="true" aria-controls="pergunta1">
+                        É possivel cancelar a viagem?
+                    </a>
+                    <div id="pergunta1" class="collapse show" data-parent="#perguntas-frequentes" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione dolore error quis
+                            porro pariatur
+                            incidunt ipsa fugit omnis! Hic sint nemo recusandae velit, provident aliquam porro
+                            repellendus corporis
+                            accusantium!</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntas-frequentes" href="#pergunta2"
+                        aria-expanded="true" aria-controls="pergunta2">
+                        Qual garantia tenho se perder a viagem?
+                    </a>
+                    <div id="pergunta2" class="collapse " data-parent="#perguntas-frequentes" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione dolore error quis
+                            porro pariatur
+                            incidunt ipsa fugit omnis! Hic sint nemo recusandae velit, provident aliquam porro
+                            repellendus corporis
+                            accusantium!</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntas-frequentes" href="#pergunta3"
+                        aria-expanded="true" aria-controls="pergunta3">
+                        Qual a principal forma de viagem?
+                    </a>
+                    <div id="pergunta3" class="collapse " data-parent="#perguntas-frequentes" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione dolore error quis
+                            porro pariatur
+                            incidunt ipsa fugit omnis! Hic sint nemo recusandae velit, provident aliquam porro
+                            repellendus corporis
+                            accusantium!</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntas-frequentes" href="#pergunta4"
+                        aria-expanded="true" aria-controls="pergunta4">
+                        Qual o melhor destino de viagem?
+                    </a>
+                    <div id="pergunta4" class="collapse " data-parent="#perguntas-frequentes" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione dolore error quis
+                            porro pariatur
+                            incidunt ipsa fugit omnis! Hic sint nemo recusandae velit, provident aliquam porro
+                            repellendus corporis
+                            accusantium!</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p class="m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a href="" class="btn bg-primary text-light">Entre em Contato</a>
+        </div>
+    </section>
 
 
     <footer class="bg-dark text-white mt-4">
